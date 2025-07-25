@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. 제국주의 질서와 일제의 식민 통치 정책 - 모두의 한국사</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .tab-btn.active {
+            border-color: #4f46e5;
+            background-color: #4f46e5;
+            color: white;
+        }
+        .hidden-box {
+            cursor: pointer;
+            border: 2px dashed #9ca3af;
+            background-color: #f3f4f6;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 700;
+            color: transparent; /* Make text transparent initially */
+            transition: all 0.2s ease;
+            display: inline-block;
+            min-width: 100px;
+            text-align: center;
+            user-select: none;
+        }
+        .hidden-box:hover {
+            background-color: #e5e7eb;
+            border-color: #6b7280;
+        }
+        .revealed-box {
+            background-color: #eef2ff;
+            color: #4338ca;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 700;
+            animation: fadeIn 0.5s;
+            display: inline-block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .quiz-option.correct {
+            background-color: #dcfce7;
+            border-color: #22c55e;
+        }
+        .quiz-option.incorrect {
+            background-color: #fee2e2;
+            border-color: #ef4444;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 헤더 -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-xl sm:text-2xl font-black text-gray-900">1. 제국주의 질서와 일제의 식민 통치 정책</h1>
+                <p class="mt-1 text-sm text-gray-600">비상 한국사 2</p>
+            </div>
+            <a href="#" onclick="window.history.back(); return false;" class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors text-sm sm:text-base">
+                뒤로가기
+            </a>
+        </div>
+    </header>
+
+    <!-- 탭 메뉴 -->
+    <div class="container mx-auto px-4 sm:px-6 py-4">
+        <div class="flex border-b">
+            <button class="tab-btn active py-2 px-4 font-semibold text-gray-600 border-b-2 border-transparent hover:border-gray-400" onclick="changeTab(0)">1. 교과서 핵심 정리</button>
+            <button class="tab-btn py-2 px-4 font-semibold text-gray-600 border-b-2 border-transparent hover:border-gray-400" onclick="changeTab(1)">2. 스토리텔링 한국사</button>
+            <button class="tab-btn py-2 px-4 font-semibold text-gray-600 border-b-2 border-transparent hover:border-gray-400" onclick="changeTab(2)">3. 내용 확인 문제</button>
+        </div>
+    </div>
+
+    <!-- 컨텐츠 영역 -->
+    <main class="container mx-auto px-4 sm:px-6 py-8">
+        <!-- 1. 교과서 핵심 정리 -->
+        <div id="tab-content-0" class="tab-content">
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md space-y-10">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 pb-2 border-b-2 border-indigo-500 inline-block">1910년대: 헌병 경찰 통치 (무단 통치)</h2>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li>
+                            <span class="font-semibold">중앙 정치:</span> <span class="text-indigo-600 font-bold">조선 총독부</span>를 설치하고, 총독에 현역 육·해군 대장을 임명. 총독은 행정·입법·사법·군사권을 모두 장악한 절대 권력자. 자문 기구로 <span class="text-indigo-600 font-bold">중추원</span>을 두었으나 친일파 중심으로 구성하고 실제 소집은 거의 하지 않음.
+                        </li>
+                        <li>
+                            <span class="font-semibold">통치 방식:</span> <span class="text-indigo-600 font-bold">헌병 경찰 제도</span>를 시행하여 공포 분위기 조성. 헌병 경찰은 즉결 처분권을 가져 재판 없이 한국인에게 벌금이나 태형을 가함.
+                        </li>
+                        <li>
+                            <span class="font-semibold">주요 악법:</span>
+                            <ul class="list-['–'] list-inside ml-6 mt-1 space-y-1">
+                                <li><span class="font-bold">조선 태형령(1912):</span> 한국인에게만 적용되는 비인간적인 신체형으로, 민족 차별의 상징.</li>
+                                <li><span class="font-bold">범죄 즉결례, 경찰범 처벌 규칙:</span> 헌병 경찰의 권한을 강화하여 한국인의 일상생활까지 통제.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="font-semibold">기본권 억압:</span> 모든 종류의 정치·사회 단체를 강제 해산하고, <span class="font-bold">언론·출판·집회·결사의 자유를 전면 박탈</span>. 『대한매일신보』 등 민족 신문 폐간.
+                        </li>
+                         <li>
+                            <span class="font-semibold">교육 정책:</span> 제1차 조선 교육령(1911)을 통해 한국인을 일본 제국에 순응하는 노동력으로 키우고자 함. <span class="font-bold">보통 교육(4년)과 실업 교육 위주</span>로 편성하고, 고등 교육 기회는 거의 제공하지 않음. 교원도 제복을 입고 칼을 차게 하여 위압적인 분위기 조성.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 pb-2 border-b-2 border-green-500 inline-block">1920년대: 기만적 문화 통치 (민족 분열 통치)</h2>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li>
+                            <span class="font-semibold">배경:</span> <span class="text-green-600 font-bold">3·1 운동</span>의 전국적 저항에 직면하여 무단 통치의 한계를 느낌.
+                        </li>
+                        <li>
+                            <span class="font-semibold">기만적 통치:</span> 겉으로는 유화 정책을 표방했으나, 실제로는 감시와 탄압을 강화하고 친일파를 양성하여 민족을 이간질하려는 <span class="text-green-600 font-bold">민족 분열 통치</span>가 본질.
+                            <ul class="list-['–'] list-inside ml-6 mt-1 space-y-1">
+                                <li><span class="font-bold">총독 임명:</span> 문관 총독 임명이 가능하도록 법을 바꿨으나, 광복까지 단 한 명도 임명되지 않음.</li>
+                                <li><span class="font-bold">경찰 제도:</span> 헌병 경찰제를 <span class="font-bold">보통 경찰제</span>로 전환했으나, 경찰 인력, 관서 수, 예산은 3배 이상 대폭 증가시켜 감시망을 더욱 촘촘히 함.</li>
+                                <li><span class="font-bold">언론 정책:</span> 『조선일보』, 『동아일보』 등 한글 신문 발행을 허용했으나, 기사 삭제, 압수, 정간 등 <span class="font-bold">엄격한 사전 검열</span> 실시.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="font-semibold">주요 악법:</span> <span class="text-green-600 font-bold">치안 유지법(1925)</span>을 제정하여 독립운동은 물론 사회주의 운동 등 일체의 반체제 운동을 가혹하게 탄압.
+                        </li>
+                         <li>
+                            <span class="font-semibold">목표:</span> 교육 기회 확대, 지방 자치 참여 등을 미끼로 <span class="font-bold">친일 세력을 체계적으로 육성</span>하고, 이들을 통해 민족 운동 내부의 분열을 조장.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 pb-2 border-b-2 border-red-500 inline-block">1930~40년대: 민족 말살 통치와 병참 기지화</h2>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li>
+                            <span class="font-semibold">배경:</span> <span class="text-red-600 font-bold">대공황</span>으로 인한 경제 위기를 타개하기 위해 <span class="font-bold">만주 사변(1931), 중일 전쟁(1937), 태평양 전쟁(1941)</span> 등 침략 전쟁을 확대.
+                        </li>
+                        <li>
+                            <span class="font-semibold">황국 신민화 정책:</span> 한국인을 침략 전쟁에 효과적으로 동원하기 위해 한국 민족의 정체성을 말살하고 일본 천황에게 충성하는 백성으로 만들려 함.
+                            <ul class="list-['–'] list-inside ml-6 mt-1 space-y-1">
+                                <li><span class="font-bold">사상 통제:</span> <span class="text-red-600 font-bold">내선일체</span>(일본과 조선은 한 몸), 일선동조론(일본과 조선의 조상은 같다) 등의 황당한 논리 주입.</li>
+                                <li><span class="font-bold">의례 강요:</span> <span class="font-bold">황국 신민 서사</span> 암송, 매일 아침 일본 궁성을 향해 절하는 <span class="font-bold">궁성 요배</span>, <span class="font-bold">신사 참배</span> 강요.</li>
+                                <li><span class="font-bold">문화 말살:</span> <span class="text-red-600 font-bold">창씨개명</span>(일본식 성명 강요), 학교에서 우리말과 역사 교육 전면 금지, 한글 신문 폐간.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="font-semibold">전시 총동원 체제 (인적·물적 수탈):</span> <span class="text-red-600 font-bold">국가 총동원법(1938)</span>을 제정하여 모든 자원을 전쟁에 동원.
+                            <ul class="list-['–'] list-inside ml-6 mt-1 space-y-1">
+                                <li><span class="font-bold">인적 수탈:</span> <span class="font-bold">징병</span>(군인), <span class="font-bold">징용</span>(노동자), 학도 지원병, <span class="font-bold">여자 정신 근로령</span>, <span class="text-red-700 font-extrabold">일본군 '위안부'</span> 강제 동원 등.</li>
+                                <li><span class="font-bold">물적 수탈:</span> <span class="font-bold">미곡 공출</span>(쌀 강제 수탈), <span class="font-bold">금속 공출</span>(놋그릇, 수저, 교회 종까지 수탈) 등.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. 스토리텔링 한국사 -->
+        <div id="tab-content-1" class="tab-content hidden">
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md space-y-6 text-lg leading-relaxed">
+                <p>
+                    1910년, 일제는 우리나라를 강제로 병합하고 식민 통치를 위한 최고 기구로 <span class="hidden-box" data-text="조선 총독부" onclick="reveal(this)">&nbsp;</span>를 설치했습니다. 총독으로는 막강한 권한을 가진 육해군 대장을 임명했죠. 1910년대는 힘으로 억누르는 <span class="hidden-box" data-text="무단 통치" onclick="reveal(this)">&nbsp;</span> 시기였습니다. 일반 경찰 업무까지 담당했던 <span class="hidden-box" data-text="헌병 경찰" onclick="reveal(this)">&nbsp;</span>은 한국인에게만 적용되는 잔혹한 형벌인 <span class="hidden-box" data-text="조선 태형령" onclick="reveal(this)">&nbsp;</span>을 통해 우리 민족을 탄압했습니다.
+                </p>
+                <p>
+                    하지만 1919년, 전국적으로 <span class="hidden-box" data-text="3·1 운동" onclick="reveal(this)">&nbsp;</span>이 일어나자 일제는 깜짝 놀랐습니다. 더 이상 힘만으로는 조선을 다스릴 수 없다고 판단한 그들은 통치 방식을 바꿉니다. 이른바 <span class="hidden-box" data-text="문화 통치" onclick="reveal(this)">&nbsp;</span>의 시작이었죠. 겉으로는 부드러워 보였습니다. 헌병 경찰을 <span class="hidden-box" data-text="보통 경찰" onclick="reveal(this)">&nbsp;</span>로 바꾸고, 한글 신문 발행도 허용했습니다. 하지만 실상은 달랐습니다. 경찰의 수와 예산은 오히려 크게 늘었고, 1925년에는 독립운동가들을 탄압하기 위한 악법인 <span class="hidden-box" data-text="치안 유지법" onclick="reveal(this)">&nbsp;</span>을 만들어 우리 민족의 저항을 억압했습니다. 결국 문화 통치는 우리 민족을 이간질하여 분열시키려는 교묘한 <span class="hidden-box" data-text="민족 분열 정책" onclick="reveal(this)">&nbsp;</span>에 불과했습니다.
+                </p>
+                <p>
+                    1930년대에 들어 세계적인 <span class="hidden-box" data-text="대공황" onclick="reveal(this)">&nbsp;</span>이 닥치자, 일본은 전쟁을 통해 위기를 극복하려 했습니다. <span class="hidden-box" data-text="만주 사변" onclick="reveal(this)">&nbsp;</span>과 <span class="hidden-box" data-text="중일 전쟁" onclick="reveal(this)">&nbsp;</span>을 일으키며 침략 전쟁을 확대했죠. 이 시기 일제는 우리 민족의 정체성을 완전히 없애려는 <span class="hidden-box" data-text="민족 말살 통치" onclick="reveal(this)">&nbsp;</span>를 실시했습니다. '일본과 조선은 하나'라는 <span class="hidden-box" data-text="내선일체" onclick="reveal(this)">&nbsp;</span>를 내세우며, 천황에 대한 충성을 맹세하는 <span class="hidden-box" data-text="황국 신민 서사" onclick="reveal(this)">&nbsp;</span> 암송과 신사 참배를 강요했습니다. 심지어 우리 이름까지 일본식으로 바꾸는 <span class="hidden-box" data-text="창씨개명" onclick="reveal(this)">&nbsp;</span>을 강요했죠. 또한, 전쟁에 필요한 인력과 물자를 수탈하기 위해 1938년 <span class="hidden-box" data-text="국가 총동원법" onclick="reveal(this)">&nbsp;</span>을 제정하고, 수많은 청년을 군인(<span class="hidden-box" data-text="징병" onclick="reveal(this)">&nbsp;</span>)과 노동자(<span class="hidden-box" data-text="징용" onclick="reveal(this)">&nbsp;</span>)로 끌고 갔으며, 여성들을 전쟁터로 동원하는 비인간적인 만행을 저질렀습니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. 내용 확인 문제 -->
+        <div id="tab-content-2" class="tab-content hidden">
+            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md">
+                <div id="quiz-container" class="space-y-8">
+                    <!-- 문제가 여기에 동적으로 추가됩니다. -->
+                </div>
+                <div class="mt-8 text-center">
+                    <button id="submit-quiz-btn" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700 transition-colors text-lg">제출하기</button>
+                </div>
+                <div id="quiz-result" class="hidden mt-8 text-center text-2xl font-bold"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // 탭 전환 로직
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        function changeTab(index) {
+            tabBtns.forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.add('active');
+                    tabContents[i].classList.remove('hidden');
+                } else {
+                    btn.classList.remove('active');
+                    tabContents[i].classList.add('hidden');
+                }
+            });
+        }
+
+        // 스토리텔링 상자 클릭 로직
+        function reveal(element) {
+            const text = element.dataset.text;
+            const revealed = document.createElement('span');
+            revealed.className = 'revealed-box';
+            revealed.textContent = text;
+            element.replaceWith(revealed);
+        }
+
+        // 퀴즈 로직
+        const quizData = [
+            { question: "1910년대 일제가 식민 통치를 위해 설치한 최고 기관의 명칭은 무엇인가요?", options: ["통감부", "조선 총독부", "중추원", "내각 총리대신", "헌병 경찰대"], answer: "조선 총독부" },
+            { question: "1910년대 무단 통치의 상징으로, 한국인에게만 적용되었던 신체형은 무엇인가요?", options: ["징역형", "벌금형", "태형", "유배형", "사형"], answer: "태형" },
+            { question: "1910년대 일제가 언론, 출판, 집회, 결사의 자유를 억압한 통치 방식을 무엇이라고 하나요?", options: ["문화 통치", "민족 분열 통치", "황국 신민화 정책", "무단 통치", "보통 통치"], answer: "무단 통치" },
+            { question: "3·1 운동 이후 일제가 통치 방식을 '문화 통치'로 바꾼 가장 큰 이유는 무엇인가요?", options: ["한국 문화 존중", "민족 자결주의 수용", "무단 통치의 한계 인식", "일본 내 여론 악화", "경제적 지원 확대"], answer: "무단 통치의 한계 인식" },
+            { question: "1920년대 문화 통치의 기만성을 보여주는 사실이 아닌 것은 무엇인가요?", options: ["문관 총독 임명 가능", "경찰 인력 및 예산 대폭 증가", "한글 신문 발행 허용", "치안 유지법 제정", "조선 태형령 폐지"], answer: "문관 총독 임명 가능" },
+            { question: "1925년 일제가 독립운동과 사회주의 운동을 탄압하기 위해 제정한 법률은 무엇인가요?", options: ["국가 총동원법", "조선 교육령", "회사령", "치안 유지법", "범죄 즉결례"], answer: "치안 유지법" },
+            { question: "문화 통치의 궁극적인 목표로 가장 적절한 것은 무엇인가요?", options: ["한국의 완전한 독립 지원", "민족 문화 발전 장려", "친일 세력 육성을 통한 민족 분열", "경제적 자립 지원", "민주주의 정착 유도"], answer: "친일 세력 육성을 통한 민족 분열" },
+            { question: "1930년대 일제가 침략 전쟁을 확대하게 된 국제적 배경은 무엇인가요?", options: ["제1차 세계 대전", "러일 전쟁", "대공황", "러시아 혁명", "파리 강화 회의"], answer: "대공황" },
+            { question: "일제가 '일본과 조선은 하나'라고 주장하며 한국인의 민족의식을 말살하려 한 사상은 무엇인가요?", options: ["일선동조론", "정한론", "대동아 공영권", "황국 신민 사상", "내선일체"], answer: "내선일체" },
+            { question: "다음 중 황국 신민화 정책의 내용으로 옳지 않은 것은 무엇인가요?", options: ["신사 참배 강요", "창씨개명", "궁성 요배", "회사령 공포", "황국 신민 서사 암송"], answer: "회사령 공포" },
+            { question: "일제가 전쟁 물자와 인력을 총동원하기 위해 1938년에 제정한 법률은 무엇인가요?", options: ["치안 유지법", "국가 총동원법", "미곡 공출령", "징병령", "조선 교육령"], answer: "국가 총동원법" },
+            { question: "일제 강점 말기, 청년들을 전쟁터로 강제로 끌고 간 제도는 무엇인가요?", options: ["징용", "공출", "징병", "지원병", "근로 보국대"], answer: "징병" },
+            { question: "일제가 여성들을 군수 공장 등에서 강제 노동시킨 것과 관련된 법령은 무엇인가요?", options: ["국민 징용령", "여자 정신 근로령", "치안 유지법", "학도 지원병제", "국가 총동원법"], answer: "여자 정신 근로령" },
+            { question: "1910년대 헌병 경찰이 재판 없이 한국인을 처벌할 수 있었던 권한은 무엇인가요?", options: ["입법권", "사법권", "즉결 처분권", "행정권", "경찰권"], answer: "즉결 처분권" },
+            { question: "1920년대에 창간이 허용된 대표적인 한글 신문이 아닌 것은 무엇인가요?", options: ["조선일보", "동아일보", "황성신문", "시대일보", "중외일보"], answer: "황성신문" },
+            { question: "일제가 중일 전쟁 이후 한국을 전쟁 수행을 위한 병참 기지로 만들려고 한 정책은 무엇인가요?", options: ["남면북양 정책", "병참 기지화 정책", "산미 증식 계획", "토지 조사 사업", "조선 공업화 정책"], answer: "병참 기지화 정책" },
+            { question: "일제 강점기 소학교의 명칭을 '황국 신민의 학교'라는 뜻으로 바꾼 이름은 무엇인가요?", options: ["보통학교", "소학교", "인민학교", "국민학교", "심상소학교"], answer: "국민학교" },
+            { question: "다음 중 1930~40년대 일제의 물적 수탈에 해당하지 않는 것은 무엇인가요?", options: ["미곡 공출", "금속 공출", "산미 증식 계획", "국방 헌금 강요", "놋그릇 수거"], answer: "산미 증식 계획" },
+            { question: "일제가 '문화 통치' 시기 지방 자치에 참여시킨다는 명분으로 설치했으나, 실질적인 의결권이 없었던 자문 기구는 무엇인가요?", options: ["중추원", "의정부", "도 평의회", "군 국무회의", "임시 의정원"], answer: "도 평의회" },
+            { question: "일제 강점기 시기별 통치 방식이 바르게 연결된 것은 무엇인가요?", options: ["1910년대-민족 말살 통치", "1920년대-무단 통치", "1930년대-문화 통치", "1920년대-민족 분열 통치", "1910년대-황국 신민화 정책"], answer: "1920년대-민족 분열 통치" }
+        ];
+
+        const quizContainer = document.getElementById('quiz-container');
+        const submitBtn = document.getElementById('submit-quiz-btn');
+        const resultContainer = document.getElementById('quiz-result');
+
+        // 퀴즈 문제 생성
+        quizData.forEach((q, index) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.className = 'quiz-question';
+            questionDiv.dataset.answer = q.answer;
+
+            const questionText = document.createElement('p');
+            questionText.className = 'text-lg font-semibold mb-4';
+            questionText.textContent = (index + 1) + ". " + q.question; // 문제 번호 추가
+            questionDiv.appendChild(questionText);
+
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'space-y-3';
+            
+            q.options.forEach(option => {
+                const label = document.createElement('label');
+                label.className = 'quiz-option block border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-gray-100 transition-colors';
+                
+                const radio = document.createElement('input');
+                radio.type = 'radio';
+                radio.name = 'question-' + index;
+                radio.value = option;
+                radio.className = 'mr-3';
+
+                label.appendChild(radio);
+                label.appendChild(document.createTextNode(option));
+                optionsDiv.appendChild(label);
+            });
+
+            questionDiv.appendChild(optionsDiv);
+            quizContainer.appendChild(questionDiv);
+        });
+
+        // 퀴즈 제출 로직
+        submitBtn.addEventListener('click', () => {
+            let score = 0;
+            const questions = document.querySelectorAll('.quiz-question');
+
+            questions.forEach((question, index) => {
+                const correctAnswer = question.dataset.answer;
+                const selectedOption = question.querySelector('input[name="question-' + index + '"]:checked');
+                const options = question.querySelectorAll('.quiz-option');
+
+                options.forEach(opt => {
+                    const radio = opt.querySelector('input');
+                    radio.disabled = true; // 정답 확인 후 비활성화
+                    if (radio.value === correctAnswer) {
+                        opt.classList.add('correct');
+                    }
+                });
+
+                if (selectedOption) {
+                    if (selectedOption.value === correctAnswer) {
+                        score++;
+                    } else {
+                        selectedOption.parentElement.classList.add('incorrect');
+                    }
+                }
+            });
+
+            const totalQuestions = quizData.length;
+            const finalScore = (score / totalQuestions) * 100;
+            resultContainer.textContent = '총 ' + totalQuestions + '문제 중 ' + score + '문제를 맞혔습니다! (점수: ' + finalScore.toFixed(0) + '점)';
+            resultContainer.classList.remove('hidden');
+            submitBtn.disabled = true;
+            submitBtn.textContent = '제출 완료';
+            submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
+            submitBtn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+        });
+    </script>
+
+</body>
+</html>

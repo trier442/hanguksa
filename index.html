@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모두의 한국사 - 내신, 수능, 한능검 완벽 대비</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Noto Sans KR 폰트 적용 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* 커스텀 애니메이션 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        /* 카드 호버 효과 */
+        .category-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        /* 버튼 스타일 */
+        .publisher-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .publisher-btn:hover {
+            background-color: #1e40af; /* 더 진한 파란색 */
+            color: #ffffff;
+        }
+        .highschool-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .highschool-btn:hover {
+             background-color: #15803d; /* 더 진한 녹색 */
+             color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 헤더 -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-black text-gray-800">
+                모두의 한국사
+            </h1>
+            <p class="mt-4 text-lg text-gray-600">
+                중학 내신부터 수능, 한국사 능력검정시험까지 완벽 대비
+            </p>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+
+            <!-- 수능 대비 -->
+            <div class="category-card bg-white rounded-xl shadow-lg p-8 fade-in" style="animation-delay: 0.1s;">
+                <div class="flex items-center mb-6">
+                    <div class="p-3 bg-purple-100 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-4 text-2xl font-bold">수능 한국사 대비</h2>
+                </div>
+                <p class="text-gray-600 mb-6">개념 정리부터 기출문제 풀이, 최종 정리까지 수능 만점을 위한 모든 것.</p>
+                <div class="space-y-4">
+                    <a href="#" class="w-full block text-center bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors duration-300">2026 수능 대비</a>
+                    <a href="#" class="w-full block text-center bg-purple-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-600 transition-colors duration-300">수능 모고 기출 분석</a>
+                </div>
+            </div>
+
+            <!-- 고등학교 내신 대비 -->
+            <div class="category-card bg-white rounded-xl shadow-lg p-8 fade-in" style="animation-delay: 0.2s;">
+                <div class="flex items-center mb-6">
+                     <div class="p-3 bg-green-100 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-4 text-2xl font-bold">고등학교 내신 대비</h2>
+                </div>
+                <p class="text-gray-600 mb-6">학습할 교과서 출판사와 과목을 선택하세요.</p>
+                <div class="space-y-4">
+                    <!-- 동아출판 -->
+                    <div>
+                        <p class="font-semibold text-gray-800">동아출판</p>
+                        <div class="grid grid-cols-2 gap-3 mt-1.5">
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사1</a>
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사2</a>
+                        </div>
+                    </div>
+                    <!-- 비상교육 -->
+                    <div>
+                        <p class="font-semibold text-gray-800">비상교육</p>
+                        <div class="grid grid-cols-2 gap-3 mt-1.5">
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사1</a>
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사2</a>
+                        </div>
+                    </div>
+                    <!-- 천재교과서 -->
+                    <div>
+                        <p class="font-semibold text-gray-800">천재교과서</p>
+                        <div class="grid grid-cols-2 gap-3 mt-1.5">
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사1</a>
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사2</a>
+                        </div>
+                    </div>
+                    <!-- 미래엔 -->
+                    <div>
+                        <p class="font-semibold text-gray-800">미래엔</p>
+                        <div class="grid grid-cols-2 gap-3 mt-1.5">
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사1</a>
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사2</a>
+                        </div>
+                    </div>
+                    <!-- 지학사 -->
+                    <div>
+                        <p class="font-semibold text-gray-800">지학사</p>
+                        <div class="grid grid-cols-2 gap-3 mt-1.5">
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사1</a>
+                            <a href="#" class="highschool-btn text-center bg-green-50 border border-green-200 text-green-800 font-semibold py-2 px-2 rounded-lg hover:bg-green-600 hover:text-white">한국사2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 중학교 내신 대비 -->
+            <div class="category-card bg-white rounded-xl shadow-lg p-8 fade-in" style="animation-delay: 0.3s;">
+                <div class="flex items-center mb-6">
+                    <div class="p-3 bg-blue-100 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v11.494m-9-5.747h18" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-4 text-2xl font-bold">중학교 내신 대비</h2>
+                </div>
+                <p class="text-gray-600 mb-6">사용 중인 교과서 출판사를 선택하여 학습을 시작하세요.</p>
+                <div class="grid grid-cols-3 gap-4">
+                    <a href="#" class="publisher-btn text-center bg-blue-50 border border-blue-200 text-blue-800 font-semibold py-3 px-2 rounded-lg hover:bg-blue-600 hover:text-white">동아출판</a>
+                    <a href="#" class="publisher-btn text-center bg-blue-50 border border-blue-200 text-blue-800 font-semibold py-3 px-2 rounded-lg hover:bg-blue-600 hover:text-white">비상교육</a>
+                    <a href="#" class="publisher-btn text-center bg-blue-50 border border-blue-200 text-blue-800 font-semibold py-3 px-2 rounded-lg hover:bg-blue-600 hover:text-white">천재교육</a>
+                </div>
+            </div>
+
+            <!-- 한국사 능력검정시험 -->
+            <div class="category-card bg-white rounded-xl shadow-lg p-8 fade-in" style="animation-delay: 0.4s;">
+                <div class="flex items-center mb-6">
+                    <div class="p-3 bg-yellow-100 rounded-full">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-4 text-2xl font-bold">한국사 능력검정시험</h2>
+                </div>
+                <p class="text-gray-600 mb-6">목표 급수를 선택하고, 효율적인 학습 계획을 세워보세요.</p>
+                <div class="space-y-4">
+                    <a href="#" class="w-full block text-center bg-yellow-400 text-yellow-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors duration-300">1급 · 2급 (심화)</a>
+                    <a href="#" class="w-full block text-center bg-yellow-300 text-yellow-800 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors duration-300">3급 · 4급 (중급)</a>
+                    <a href="#" class="w-full block text-center bg-yellow-200 text-yellow-700 font-bold py-3 px-6 rounded-lg hover:bg-yellow-300 transition-colors duration-300">5급 · 6급 (기본)</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-white mt-12">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2024 모두의 한국사. All Rights Reserved.</p>
+            <p class="text-sm mt-2">본 사이트는 학습 보조 목적으로 제작되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
